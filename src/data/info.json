@@ -1,0 +1,32 @@
+{
+	"game": {
+	  "name": "Játssz és tanulj a pénzedtől",
+	  "description": "A thrilling adventure game where players explore ancient ruins.",
+	  "rules": {
+		"overview": "Players take turns exploring ruins, battling monsters, and solving puzzles.",
+		"win_condition": "The player who collects the most artifacts wins.",
+		"lose_condition": "If all players run out of health, the game is lost."
+	  },
+	  "components": [
+		{
+			"id":0,
+		  "name": "Röfi a segéd",
+		  "description": "A game board representing the ruins with various spaces for players to move through.",
+		  "more_info": "The board consists of a grid layout with different terrain types and special locations."
+		},
+		{
+			"id":1,
+		  "name": "Költés edénye",
+		  "description": "Tokens representing each player's character on the game board.",
+		  "more_info": "Players can choose from different character classes, each with unique abilities."
+		},
+		{
+			"id":2,
+		  "name": "Adakozás edénye",
+		  "description": "Cards representing valuable artifacts that players can collect.",
+		  "more_info": "Artifacts provide points and may have special effects when collected."
+		}
+	  ]
+	}
+  }
+  
