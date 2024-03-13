@@ -122,6 +122,7 @@
     
   <script>
   import imported from "../data/info.json";
+  // import (`sweetalert2/dist/sweetalert2.min.css`);
     export default {
   
       data() {
