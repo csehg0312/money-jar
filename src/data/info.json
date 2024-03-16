@@ -1,9 +1,9 @@
 {
 	"game": {
 	  "name": "Játssz és tanulj a pénzedtől",
-	  "description": "A thrilling adventure game where players explore ancient ruins.",
+	  "description": "Ismerkedj meg az érmék erejével.",
 	  "rules": {
-		"overview": "Players take turns exploring ruins, battling monsters, and solving puzzles.",
+		"overview": "A játékosnak el kell döntenie hová helyezi az érméit.",
 		"win_condition": "The player who collects the most artifacts wins.",
 		"lose_condition": "If all players run out of health, the game is lost."
 	  },
@@ -11,20 +11,17 @@
 		{
 			"id":0,
 		  "name": "Röfi a segéd",
-		  "description": "Bemutatom Röfit, a hűséges segédet, akinek különleges képessége van ahhoz, hogy minden áron vigyázzon és megőrizzen mindent, amit rábízol, legyen az egy érme vagy bármilyen más tárgy. Röfi nemcsak hogy vigyáz rá, mint a sárkány a kincsére, de mindent meg is tesz azért, hogy az biztonságban legyen és épségben visszakerüljön hozzád. Tehát ha bármikor szükséged van valamire, amit szeretnél megőrizni és biztonságban tudni, Röfi a legmegbízhatóbb társad lehet a számodra.",
-		  "more_info": "The board consists of a grid layout with different terrain types and special locations."
+		  "description": "Bemutatom Röfit, a hűséges segédet, akinek különleges képessége van ahhoz, hogy minden áron vigyázzon és megőrizzen mindent, amit rábízol, legyen az egy érme vagy bármilyen más tárgy. Röfi nemcsak hogy vigyáz rá, mint a sárkány a kincsére, de mindent meg is tesz azért, hogy az biztonságban legyen és épségben visszakerüljön hozzád. Tehát ha bármikor szükséged van valamire, amit szeretnél megőrizni és biztonságban tudni, Röfi a legmegbízhatóbb társad lehet a számodra."
 		},
 		{
 			"id":1,
 		  "name": "Költés edénye",
-		  "description": "Ismerjétek meg a Költés Edényét, a misztikus tárgyat, melybe belehelyezett kincs soha többé nem kerül elő. Az Edény az örök titkok őrzője, ahol minden elrejtett kincs örökre megmarad a múlt homályában. Lepje meg az emberi fantáziát, s rejtsen el mindent, amit a múltba, a jelenbe vagy a jövőbe örökíteni kívánsz, mert miután az Edénybe kerül, az a végtelenség sötétjébe vesz.",
-		  "more_info": "Players can choose from different character classes, each with unique abilities."
+		  "description": "Ismerjétek meg a Költés Edényét, a misztikus tárgyat, melybe belehelyezett kincs soha többé nem kerül elő. Az Edény az örök titkok őrzője, ahol minden elrejtett kincs örökre megmarad a múlt homályában. Lepje meg az emberi fantáziát, s rejtsen el mindent, amit a múltba, a jelenbe vagy a jövőbe örökíteni kívánsz, mert miután az Edénybe kerül, az a végtelenség sötétjébe vesz."
 		},
 		{
 			"id":2,
 		  "name": "Adakozás edénye",
-		  "description": "Üdvözöllek az Adakozás Edényében, ahol egy érme átvétele az önzetlen adakozás és a bizalom jele. Amint érmedet helyezed az Edénybe, olyan, mintha legjobb barátodnak kölcsönadnád kedvenc játékodat, és bizonyos lennél benne, hogy ő épségben és biztonságban visszahozza azt hozzád. Az Edény nemcsak az érmét őrzi meg, hanem az adakozás és a baráti kapcsolatok erejét is, melyeket örömmel osztasz meg másokkal.",
-		  "more_info": "Artifacts provide points and may have special effects when collected."
+		  "description": "Üdvözöllek az Adakozás Edényében, ahol egy érme átvétele az önzetlen adakozás és a bizalom jele. Amint érmedet helyezed az Edénybe, olyan, mintha legjobb barátodnak kölcsönadnád kedvenc játékodat, és bizonyos lennél benne, hogy ő épségben és biztonságban visszahozza azt hozzád. Az Edény nemcsak az érmét őrzi meg, hanem az adakozás és a baráti kapcsolatok erejét is, melyeket örömmel osztasz meg másokkal."
 		}
 	  ]
 	}
