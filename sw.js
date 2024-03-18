@@ -4,10 +4,6 @@ const links = [
   // add more links here as needed
 ];
 
-
-
-
-
 self.addEventListener('install', event => {
   event.waitUntil(
     caches.open(CACHE_NAME)
