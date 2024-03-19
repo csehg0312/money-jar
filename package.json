@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "esbuild": "0.16.17",
+    "pinia": "^2.1.7",
     "sweetalert2": "^11.6.13",
     "vue": "^3.2.45",
     "vue-sweetalert2": "^5.0.5"

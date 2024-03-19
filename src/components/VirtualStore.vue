@@ -1,4 +1,3 @@
-<!-- VirtualStore.vue -->
 <template>
     <div>
       <div v-for="item in items" :key="item.id" @click="handleItemPurchase(item)">
@@ -8,20 +7,13 @@
   </template>
   
   <script>
+  import store from "../data/store.json"
   export default {
     data() {
       return {
-        items: [
-          { id: 1, name: 'Toy', price: 10 },
-          { id: 2, name: 'Book', price: 5 },
-          // Add more items as needed
-        ],
+        items: store.store
+        
       };
-    },
-    methods: {
-      handleItemPurchase(item) {
-        // Implement logic to handle item purchase
-      },
     },
   };
   </script>
