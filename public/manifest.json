@@ -54,39 +54,33 @@
   ],
   "screenshots": [
     {
-      "src":"images/source/source.jpg",
-      "sizes":"891x480",
-      "type":"image/gif",
+      "src":"images/source/cropped-source.jpg",
+      "sizes":"782x440",
+      "type":"image/jpg",
       "form_factor":"wide",
       "label":"Application"
     },
     {
-      "src":"images/source/source1.png",
-      "sizes":"488x408",
+      "src":"images/source/cropped-source1.png",
+      "sizes":"692x389",
+      "type":"image/jpg",
+      "form_factor":"wide",
+      "label":"All The Jars",
+      "purpose":"maskable"
+    },
+    {
+      "src":"images/source/cropped-source2.png",
+      "sizes":"608x342",
       "type":"image/jpg",
       "form_factor":"wide",
       "label":"All The Jars"
     },
     {
-      "src":"images/source/source2.png",
-      "sizes":"619x421",
+      "src":"images/source/cropped-source3.png",
+      "sizes":"333x592",
       "type":"image/jpg",
-      "form_factor":"wide",
-      "label":"All The Jars"
-    },
-    {
-      "src":"images/source/source3.jpg",
-      "sizes":"616x392",
-      "type":"image/jpg",
-      "form_factor":"wide",
-      "label":"All The Jars"
-    },
-    {
-      "src":"images/source/source4.png",
-      "sizes":"623x326",
-      "type":"image/jpg",
-      "form_factor":"wide",
-      "label":"All The Jars"
+      "form_factor":"narrow",
+      "label":"Application"
     }
   ]
 
