@@ -7,7 +7,8 @@ import VirtualStore from './components/VirtualStore.vue';
 <template>
   <div>
     <MoneyJars />
-    <VirtualStore />
+    <button @click="toggleShopVisibility" style="margin: 3em 0 3em 0;"> {{ isShopVisible ? 'Piac elhagyása' : 'Piachoz' }}</button>
+    <VirtualStore v-if="isShopVisible" />
   </div>
 </template>
 
@@ -32,6 +33,18 @@ import VirtualStore from './components/VirtualStore.vue';
       MoneyJars,
       VirtualStore,
     },
+
+    data() {
+      return {
+        isShopVisible: false,
+      }
+    },
+
+    methods: {
+      toggleShopVisibility() {
+        this.isShopVisible = !this.isShopVisible
+      }
+    }
   };
 </script>
 

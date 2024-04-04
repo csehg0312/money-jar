@@ -14,43 +14,47 @@
     <div class="container">
     <!-- <div @click="handleJarClick('saving')">Saving Jar: {{ savingAmount }}</div> -->
     <div class="jar">
-        <h6>{{ component_saving.name }}</h6>
+        <h3>{{ component_saving.name }}</h3>
         <p class="info" @click="showInfo(0)">több</p>
-        <svg @click="handleJarClick('saving')" width="200" height="200" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="#32cd32" d="M15.93 7.75a1.25 1.25 0 0 0-.3-.51.83.83 0 0 0-.394-.238c.074.117.141.252.191.396q.085.221.103.467a1.8 1.8 0 0 1 0 .424 1 1 0 0 0-.142-.292 1.2 1.2 0 0 0-.48-.383.94.94 0 0 0-1.195.382q-.075.123-.12.266c-1.182-1.968-3.309-3.271-5.741-3.271q-.186 0-.369.01a8.2 8.2 0 0 0-2.231.313C5.19 4.88 4.62 4 2 4l.8 2.51a5.2 5.2 0 0 0-1.247 1.465L0 8s-.17 4 1 4h.54a5.3 5.3 0 0 0 1.445 1.589L3 16h1.08C5.39 16 6 16 6 15.25v-.39a8.3 8.3 0 0 0 3.051-.008L9 15.25c0 .75.62.75 1.94.75H12v-2.39a4.8 4.8 0 0 0 1.903-2.717c.057-.027.114-.024.172-.024s.115-.003.172-.01c.251-.046.48-.144.679-.283a1.65 1.65 0 0 0 .591-.765q.042-.14.063-.292l.001-.01c.221-.262.372-.59.419-.951q.018-.127.019-.259-.001-.296-.091-.563zm-12.42 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5M5.88 7a.5.5 0 0 1-.599-.247.39.39 0 0 1 .296-.503 8 8 0 0 1 2.009-.22l.101-.001q1.01.002 1.949.232c.126.024.262.182.262.372a.4.4 0 0 1-.019.119.48.48 0 0 1-.346.247H9.38a7.2 7.2 0 0 0-1.706-.2h-.089c-.605 0-1.193.073-1.756.211zm8.7 2.93a1.2 1.2 0 0 1-.453.199L14 10.13v-.44c.165.125.374.2.6.2h.021zm.08-.68a.44.44 0 0 1-.459-.248.6.6 0 0 1 .001-.566.33.33 0 0 1 .43-.096.48.48 0 0 1 .308.448v.001a1.5 1.5 0 0 1-.001.418 1.3 1.3 0 0 1-.282.022z"/><text x="6.85" y="2.9" font-size="2" font-family="Calibri" font-weight="bold">{{ savingAmount }}</text><path fill="#32cd32" d="M7.5.75a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 7.5.75m0-.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5"/></svg>
+        <svg @click="handleClick('saving')" width="200" height="200" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path fill="#32cd32" d="M15.93 7.75a1.25 1.25 0 0 0-.3-.51.83.83 0 0 0-.394-.238c.074.117.141.252.191.396q.085.221.103.467a1.8 1.8 0 0 1 0 .424 1 1 0 0 0-.142-.292 1.2 1.2 0 0 0-.48-.383.94.94 0 0 0-1.195.382q-.075.123-.12.266c-1.182-1.968-3.309-3.271-5.741-3.271q-.186 0-.369.01a8.2 8.2 0 0 0-2.231.313C5.19 4.88 4.62 4 2 4l.8 2.51a5.2 5.2 0 0 0-1.247 1.465L0 8s-.17 4 1 4h.54a5.3 5.3 0 0 0 1.445 1.589L3 16h1.08C5.39 16 6 16 6 15.25v-.39a8.3 8.3 0 0 0 3.051-.008L9 15.25c0 .75.62.75 1.94.75H12v-2.39a4.8 4.8 0 0 0 1.903-2.717c.057-.027.114-.024.172-.024s.115-.003.172-.01c.251-.046.48-.144.679-.283a1.65 1.65 0 0 0 .591-.765q.042-.14.063-.292l.001-.01c.221-.262.372-.59.419-.951q.018-.127.019-.259-.001-.296-.091-.563zm-12.42 0a.75.75 0 1 1 0 1.5.75.75 0 0 1 0-1.5M5.88 7a.5.5 0 0 1-.599-.247.39.39 0 0 1 .296-.503 8 8 0 0 1 2.009-.22l.101-.001q1.01.002 1.949.232c.126.024.262.182.262.372a.4.4 0 0 1-.019.119.48.48 0 0 1-.346.247H9.38a7.2 7.2 0 0 0-1.706-.2h-.089c-.605 0-1.193.073-1.756.211zm8.7 2.93a1.2 1.2 0 0 1-.453.199L14 10.13v-.44c.165.125.374.2.6.2h.021zm.08-.68a.44.44 0 0 1-.459-.248.6.6 0 0 1 .001-.566.33.33 0 0 1 .43-.096.48.48 0 0 1 .308.448v.001a1.5 1.5 0 0 1-.001.418 1.3 1.3 0 0 1-.282.022z"/><text x="6.85" y="2.9" font-size="2" font-family="Calibri" font-weight="bold">{{ savingAmount }}</text><path fill="#32cd32" d="M7.5.75a1.5 1.5 0 1 1-.001 3.001A1.5 1.5 0 0 1 7.5.75m0-.75a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5"/></svg>
         <br>
         <label for="takeAmount">Mennyit szeretnél kivenni?</label><br><input id="takeAmount" type="number" v-model="takeAmount" placeholder="Összeg" pattern="^(0|[1-9]\d*)$">
         <br>
         <br>
-        <button @click="handleOfJarTaking()" value="Take">Take</button>
+        <div>
+          <button @click="handleOfTaking()" value="Take" style="margin-bottom: 0.5em;">Kivenni</button>
+          <br>
+          <span>Feltöltés</span>
+          <br>
+          <button @click="handleMoneyTransfer('saving', 5)" value="Put" style="margin: 0.5em 0em 0em 0.5em ; background-color: greenyellow; color: green">5 érme</button>
+          <button @click="handleMoneyTransfer('saving', 10)" value="Put" style="margin: 0.5em 0 0 0.5em; background-color: greenyellow; color: green">10 érme</button>
+        </div>
     </div>
     <!-- <div @click="handleJarClick('spending')">Spending Jar: {{ spendingAmount }}</div> -->
     <div class="jar">
-        <h6>{{ component_spending.name }}</h6>
+        <h3>{{ component_spending.name }}</h3>
         <p class="info" @click="showInfo(1)">több</p>
-        <svg @click="handleJarClick('spending')" width="200" height="200" viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="M800 159.328a32 32 0 0 1-32-32H256a32 32 0 0 1-32 32 63.904 63.904 0 0 0-63.872 64v736c0 35.328 28.544 64 63.872 64h576a64 64 0 0 0 64-64v-736a64 64 0 0 0-64-64" fill="#F4D35E"/><path d="M800 991.328H224a64 64 0 0 1-64-64v32a64 64 0 0 0 64 64h576a64 64 0 0 0 64-64v-32a64 64 0 0 1-64 64" fill="#EBEBD3"/><path d="M864 95.328a32 32 0 0 1-32 32H192a31.87 31.87 0 0 1-31.872-32v-64C160.128 13.664 174.304 0 192 0h640c17.696 0 32 13.664 32 31.328z" fill="#F78764"/><path d="M512 319.328a224 224 0 1 0 0 448 224 224 0 0 0 0-448m0 416a192 192 0 0 1 0-384 192 192 0 0 1 0 384" fill="#FFF" fill-opacity=".1"/><rect x="390" y="420" width="250" height="250" rx="10" fill="#FFF"/><text x="430" y="590" font-size="120"> {{ spendingAmount }}</text><path d="M768 127.328H256a32 32 0 0 1-32 32h576a32 32 0 0 1-32-32" fill="#EBEBD3"/></svg>
+        <svg width="200" height="200" viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="M800 159.328a32 32 0 0 1-32-32H256a32 32 0 0 1-32 32 63.904 63.904 0 0 0-63.872 64v736c0 35.328 28.544 64 63.872 64h576a64 64 0 0 0 64-64v-736a64 64 0 0 0-64-64" fill="#F4D35E"/><path d="M800 991.328H224a64 64 0 0 1-64-64v32a64 64 0 0 0 64 64h576a64 64 0 0 0 64-64v-32a64 64 0 0 1-64 64" fill="#EBEBD3"/><path d="M864 95.328a32 32 0 0 1-32 32H192a31.87 31.87 0 0 1-31.872-32v-64C160.128 13.664 174.304 0 192 0h640c17.696 0 32 13.664 32 31.328z" fill="#F78764"/><path d="M512 319.328a224 224 0 1 0 0 448 224 224 0 0 0 0-448m0 416a192 192 0 0 1 0-384 192 192 0 0 1 0 384" fill="#FFF" fill-opacity=".1"/><rect x="390" y="420" width="250" height="250" rx="10" fill="#FFF"/><text x="430" y="590" font-size="120"> {{ spendingAmount }}</text><path d="M768 127.328H256a32 32 0 0 1-32 32h576a32 32 0 0 1-32-32" fill="#EBEBD3"/></svg>
         
     </div>
     <!-- <div @click="handleJarClick('giving')">Giving Jar: {{ givingAmount }}</div> -->
     <div class="jar">
-        <h6>{{ component_giving.name }}</h6>
+        <h3>{{ component_giving.name }}</h3>
         <p class="info" @click="showInfo(2)">több</p>
-        <svg @click="handleJarClick('giving')" width="200" height="200" viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="M800 159.328a32 32 0 0 1-32-32H256a32 32 0 0 1-32 32 63.904 63.904 0 0 0-63.872 64v736c0 35.328 28.544 64 63.872 64h576a64 64 0 0 0 64-64v-736a64 64 0 0 0-64-64" fill="#F4D35E"/><path d="M800 991.328H224a64 64 0 0 1-64-64v32a64 64 0 0 0 64 64h576a64 64 0 0 0 64-64v-32a64 64 0 0 1-64 64" fill="#EBEBD3"/><path d="M864 95.328a32 32 0 0 1-32 32H192a31.87 31.87 0 0 1-31.872-32v-64C160.128 13.664 174.304 0 192 0h640c17.696 0 32 13.664 32 31.328z" fill="#F78764"/><path d="M512 319.328a224 224 0 1 0 0 448 224 224 0 0 0 0-448m0 416a192 192 0 0 1 0-384 192 192 0 0 1 0 384" fill="#FFF" fill-opacity=".1"/><rect x="390" y="420" width="250" height="250" rx="10" fill="#FFF"/><text x="430" y="590" font-size="120"> {{ givingAmount }}</text><path d="M768 127.328H256a32 32 0 0 1-32 32h576a32 32 0 0 1-32-32" fill="#EBEBD3"/></svg>
+        <svg width="200" height="200" viewBox="0 0 1024 1024" class="icon" xmlns="http://www.w3.org/2000/svg"><path d="M800 159.328a32 32 0 0 1-32-32H256a32 32 0 0 1-32 32 63.904 63.904 0 0 0-63.872 64v736c0 35.328 28.544 64 63.872 64h576a64 64 0 0 0 64-64v-736a64 64 0 0 0-64-64" fill="#F4D35E"/><path d="M800 991.328H224a64 64 0 0 1-64-64v32a64 64 0 0 0 64 64h576a64 64 0 0 0 64-64v-32a64 64 0 0 1-64 64" fill="#EBEBD3"/><path d="M864 95.328a32 32 0 0 1-32 32H192a31.87 31.87 0 0 1-31.872-32v-64C160.128 13.664 174.304 0 192 0h640c17.696 0 32 13.664 32 31.328z" fill="#F78764"/><path d="M512 319.328a224 224 0 1 0 0 448 224 224 0 0 0 0-448m0 416a192 192 0 0 1 0-384 192 192 0 0 1 0 384" fill="#FFF" fill-opacity=".1"/><rect x="390" y="420" width="250" height="250" rx="10" fill="#FFF"/><text x="430" y="590" font-size="120"> {{ givingAmount }}</text><path d="M768 127.328H256a32 32 0 0 1-32 32h576a32 32 0 0 1-32-32" fill="#EBEBD3"/></svg>
     </div>
     </div>
   </div>
 </template>
   
 <style scoped>
-  /* .root {
-      background-color: white;
-  } */
+
   .container, .container-controls {
       /* background-color: white; */
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 10px;
   }
-  
   .container-controls {
     width: 100%;
     margin: 0 auto;
@@ -117,119 +121,152 @@
       width: 100%;
     }
   }
-  
-  /* Add more styling as needed */
   </style>
     
   <script>
   import imported from "../data/info.json";
-  // import (`sweetalert2/dist/sweetalert2.min.css`);
-    export default {
-  
-      data() {
-          
-        return {
-          takeAmount:0,
-          savingAmount: 0,
-          spendingAmount: 0,
-          givingAmount: 0,
-          dayMultiplier: 1,
-        //   dailyMultiplier: 0,
-          inHandMoney: 0,
-          game_name: imported.game.name,
-          game: imported,
-          component_saving: imported.game.components[0],
-          component_spending: imported.game.components[1],
-          component_giving: imported.game.components[2],
-        };
+  import { mapState, mapMutations } from "vuex";
+  import localStore from '../js/save';
+
+  export default {
+
+    setup () {
+      localStore.commit({
+          type: 'takeTransfer',
+          amount: 0
+        })
+    },
+    data() {
+        
+      return {
+        takeAmount:0,
+        dayMultiplier: 1,
+        game_name: imported.game.name,
+        game: imported,
+        component_saving: imported.game.components[0],
+        component_spending: imported.game.components[1],
+        component_giving: imported.game.components[2],
+      };
+    },
+
+    computed: {
+      ...mapState([
+        'inHandMoney',
+        'savingAmount', 
+      'spendingAmount', 
+      'givingAmount',
+    ]),
+      canTakeFromSaving() {
+        return this.takeAmount <= this.savingAmount;
       },
-      computed: {
-        canTakeFromSaving() {
-          return this.takeAmount <= this.savingAmount;
-        },
 
-        isNumberPositive() {
-          var regex = /^(0|[1-9]\d*)$/;
+      isNumberPositive() {
+        var regex = /^(0|[1-9]\d*)$/;
 
-          return regex.test(this.takeAmount);
+        return regex.test(this.takeAmount);
+      },
+
+    },
+    methods: {
+
+      ...mapMutations([
+        'handleJarClick',
+        'updateInHand',
+        'takeTransfer',
+      ]),
+
+      handleMoneyTransfer(jar, amount) {
+        if (typeof amount === 'number' && amount >= 0) {
+          if (this.inHandMoney >= amount) {
+            localStore.commit({
+              type:'handleJarClick',
+              jar:jar,
+              amount: amount
+            })
+            localStore.commit({
+              type:'updateInHand',
+              amount:amount * -1
+            })
+          } else {
+            this.notifyUser("Még gyűjtened kell hozzá!", "warning")
+          }
+        } else {
+          this.notifyUser("Invalid amount", "error")
         }
       },
-      methods: {
 
-        handleJarClick(jar) {
-          if (this.dayMultiplier != 0){
-              switch (jar) {
-                  case 'saving':
-                      this.savingAmount += this.inHandMoney;
-                      this.inHandMoney = 0;
-                      break;
-                  case 'spending':
-                      this.spendingAmount += this.inHandMoney;
-                      this.inHandMoney = 0;
-                      break;
-                  case 'giving':
-                      this.givingAmount += this.inHandMoney;
-                      this.inHandMoney = 0;
-                      break;
-                  default:
-                      break;
-              }
-          }
-          else {
-              console.log("No more to spend");
-          }
-        },
-        multiplierCalculate() {
-            this.dailyMultiplier = Math.floor((Math.random()*5)+1);
-        },
-        handleNextDay() {
-        //   this.dailyMultiplier = 0;
-          this.multiplierCalculate();
-          this.inHandMoney += this.dailyMultiplier;
-          this.notifyUser(`Kaptál ${this.dailyMultiplier} pénzt.`, "info");
-  
-        },
-
-        
-        handleOfJarTaking() {
-
-          if (this.canTakeFromSaving && this.isNumberPositive) {
-            // if (this.)
-            this.inHandMoney += this.takeAmount;
-            this.savingAmount -= this.takeAmount;
-            this.takeAmount = 0;
-          }
-          else {
-            this.notifyUser("Nem tudsz többet kivenni mint amennyit spóroltál!", "warning");
-          }
-        },
-        notifyUser(message, iconParameter) {
-          // icon = ["info", "success", "warning"];
-          this.$swal({
-            title: 'Hello,',
-            text: message,
-            showCloseButton: true,
-            showCancelButton: true,
-            focusConfirm: false,
-            icon: iconParameter
-          })
-        },
-  
-        showInfo(id){
-          let name = this.game.game.components[id].name;
-          let message = this.game.game.components[id].description;
-          this.infoMessage(name, message);
-        },
-  
-        infoMessage(name, message) {
-          this.$swal({
-            title: name,
-            text: message,
-            focusConfirm: false,
-            icon: "info"
-          })
-        },
+      handleClick(jar){
+        localStore.commit({
+          type:'handleJarClick',
+          jar: jar,
+          amount:this.inHandMoney
+        }),
+        localStore.commit({
+          type: 'takeTransfer',
+          amount: 0
+        })
       },
-    };
-    </script>
+
+      handleOfTaking(){
+        
+        if (this.canTakeFromSaving && this.isNumberPositive) {
+          localStore.commit({
+            type: 'updateInHand',
+            amount: this.takeAmount
+          }),
+          localStore.commit({
+            type:'handleOfJarTaking',
+            amount:this.takeAmount
+        })
+        this.takeAmount = 0
+        }else{
+          this.notifyUser("Nem tudsz többet kivenni mint amennyit spóroltál!", "warning");
+        }
+      },
+
+      multiplierCalculate() {
+          this.dailyMultiplier = Math.floor((Math.random()*5)+1);
+      },
+      handleNextDay() {
+      //   this.dailyMultiplier = 0;
+        this.multiplierCalculate();
+        // console.log(this.dailyMultiplier)
+        localStore.commit({
+          type: 'updateInHand',
+          amount: this.dailyMultiplier
+        })
+        this.notifyUser(`Kaptál ${this.dailyMultiplier} pénzt.`, "info");
+
+      },
+
+      notifyUser(message, iconParameter) {
+        // icon = ["info", "success", "warning"];
+        this.$swal({
+          title: 'Hello,',
+          text: message,
+          showCloseButton: true,
+          showCancelButton: true,
+          focusConfirm: false,
+          icon: iconParameter
+        })
+      },
+
+      showInfo(id){
+        let name = this.game.game.components[id].name;
+        let message = this.game.game.components[id].description;
+        this.infoMessage(name, message);
+      },
+
+      infoMessage(name, message) {
+        this.$swal({
+          title: name,
+          text: message,
+          focusConfirm: false,
+          icon: "info"
+        })
+      },
+    },
+    localStore,
+  };
+</script>
     
