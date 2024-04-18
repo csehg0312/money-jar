@@ -1,5 +1,5 @@
 const CACHE_NAME = 'sweetalert';
-const CACHE_2 = 'live';
+// const CACHE_2 = 'live';
 const linksStyle = [
   'https://cdn.jsdelivr.net/npm/sweetalert2@11.10.6/dist/sweetalert2.min.css',
   // add more links here as needed
