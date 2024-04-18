@@ -1,11 +1,13 @@
 <template>
-    <div>
-      <div v-for="item in shopItems" :key="item.id">
+    <div >
+      <div v-for="item in shopItems" :key="item.id" >
         <span style="margin: 0.5em 1.5em 1.5em 1.5em 1.5em ;">{{ item.name }} - ${{ item.price }}</span>
-        <button v-if="!item.isPurchased" @click="handleItemPurchase(item)" style="background-color: greenyellow; margin: 0 0 1.5em 2.5em;">Megvesz</button>
+        <button v-if="!item.isPurchased" @click="handleItemPurchase(item)" style="background-color: #00adb5; margin: 0 0 1.5em 2.5em;">Megvesz</button>
         <template v-if="item.isPurchased">
+        
           <button style="background-color: blue; margin: 0 0 1.5em 0.5em;">Megnyitás</button>
-          <button @click="handleItemSale(item)" style="background-color: orange; margin: 0 0 1.5em 0.5em">Eladás</button>
+          <button @click="handleItemSale(item)" style="background-color: #00fff5; margin: 0 0 1.5em 0.5em">Eladás</button>
+    
         </template>
       </div>
       <div>Keszpenzed: {{ inHandMoney }}</div>

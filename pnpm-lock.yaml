@@ -14,6 +14,9 @@ dependencies:
   vue:
     specifier: ^3.2.45
     version: 3.4.21
+  vue-router:
+    specifier: '4'
+    version: 4.3.0(vue@3.4.21)
   vue-sweetalert2:
     specifier: ^5.0.5
     version: 5.0.5(vue@3.4.21)
@@ -1407,6 +1410,15 @@ packages:
     transitivePeerDependencies:
       - supports-color
     dev: true
+
+  /vue-router@4.3.0(vue@3.4.21):
+    resolution: {integrity: sha512-dqUcs8tUeG+ssgWhcPbjHvazML16Oga5w34uCUmsk7i0BcnskoLGwjpa15fqMr2Fa5JgVBrdL2MEgqz6XZ/6IQ==}
+    peerDependencies:
+      vue: ^3.2.0
+    dependencies:
+      '@vue/devtools-api': 6.6.1
+      vue: 3.4.21
+    dev: false
 
   /vue-sweetalert2@5.0.5(vue@3.4.21):
     resolution: {integrity: sha512-Q7+TjQxNwGruT2jfPaSKMz18HHWs81r4umEwlrrtOf/QL5Iwl1T+tUaNkcvKB7Rf9rYftubt7NnOMjfDMnDH3A==}

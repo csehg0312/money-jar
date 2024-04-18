@@ -1,8 +1,8 @@
 import { createApp } from 'vue'
-// import { createStore } from 'vuex'
+
 import './style.css'
 import VueSweetalert2 from 'vue-sweetalert2';
-// import shopItems from './js/store';
+
 import localStore from './js/save';
 
 import App from './App.vue'
@@ -10,11 +10,6 @@ import App from './App.vue'
 
 const app = createApp(App)
 
-// app.config.globalProperties.$localStore = localStore
-
-// app.config.globalProperties.$shopItems = shopItems
-
-// app.use(shopItems)
 app.use(localStore)
 app.use(VueSweetalert2)
 
