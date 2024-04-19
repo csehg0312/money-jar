@@ -1,6 +1,7 @@
 <script setup>
 import MoneyJars from './components/MoneyJars.vue';
 import VirtualStore from './components/VirtualStore.vue';
+import UsageVisualizer from './components/UsageVisualizer.vue'
 
 </script>
 
@@ -9,6 +10,7 @@ import VirtualStore from './components/VirtualStore.vue';
     <MoneyJars />
     <button @click="toggleShopVisibility" style="margin: 3em 0 3em 0;"> {{ isShopVisible ? 'Piac elhagyása' : 'Piachoz' }}</button>
     <VirtualStore v-if="isShopVisible" />
+    <UsageVisualizer/>
   </div>
 </template>
 
@@ -32,6 +34,7 @@ import VirtualStore from './components/VirtualStore.vue';
     components: {
       MoneyJars,
       VirtualStore,
+      UsageVisualizer,
     },
 
     data() {

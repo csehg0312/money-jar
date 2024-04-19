@@ -58,16 +58,7 @@ const localStore = createStore({
 
     spendInHand(state, payload){
       state.inHandMoney -= payload.amount
-    },
-    notifyUser(payload) {
-      this.$swal({
-        title: 'Hello,',
-        text: payload.message,
-        showCloseButton: true,
-        showCancelButton: true,
-        focusConfirm: false,
-        icon: payload.icon
-      })
+      state.spendingAmount += payload.amount
     },
   },
 
