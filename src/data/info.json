@@ -1,11 +1,14 @@
 {
 	"game": {
-	  "name": "Játssz és tanulj a pénzedtől",
-	  "description": "Ismerkedj meg az érmék erejével.",
+	  "name": "Az aranyóra kincse",
+	  "description": "Képzelj el egy varázslatos világot, ahol az aranyóra az élet fontos része. Minden nap újra és újra ketyeg, hogy mutassa az időt, de sokkal többre is jó, mint pusztán az időmérésre. Az aranyóra minden nap pontosan 24 érmét hoz a játékosnak.",
 	  "rules": {
-		"overview": "A játékosnak el kell döntenie hová helyezi az érméit.",
-		"buy_condition": "A játék során több és több érmével leszel gazdagabb amit felhasználhatsz vásárlásra.",
-		"sell_condition": "A már nem szükséges tágyakat el is adhatod"
+		"overview1": "A játékos feladata, hogy döntsön, mit kezd az aranyérmékkel. Lehetősége van spórolni, hogy hosszú távon gazdagabb legyen, elköltögetni az érméket, hogy különleges tárgyakat vagy szolgáltatásokat vásároljon, vagy adakozni, hogy segítsen másoknak a környezetében.",
+		"overview2": "Az aranyóra mindig figyel, és minden döntés hatással van a játékos környezetére és a történet alakulására. Ha sokat adakozol, lehet, hogy mások támogatásával hatalmas közösséget hozol létre magad körül. Ha inkább spórolsz, talán gazdagabb leszel, de lehet, hogy az emberek nem fognak emlékezni rád jóságos tetteidért.",
+		"overview3": "\r Az idő múlik, és minden nap új lehetőségeket hoz. Vajon hogyan döntesz majd az aranyórád kincsei felhasználásáról? Fedezd fel a választ a Az Aranyóra Kincse játékban!",
+		"buy_knowhow":"A piacon való vásárlás lehetőséget ad a játékosnak arra, hogy különleges tárgyakat vagy szolgáltatásokat szerezzen be, ami gyorsan növelheti a játékélményét és szórakoztatást ad.",
+		"give_knowhow":"Az adakozás hatása megható lehet, mivel segít másokon és pozitív hatással van a játék környezetére.",
+		"save_knowhow":"A spórolás lehetőséget ad a játékosnak arra, hogy hosszú távon gazdagabb legyen és biztosítsa jövőjét a játékban."
 	  },
 	  "components": [
 		{

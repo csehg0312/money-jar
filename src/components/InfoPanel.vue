@@ -35,7 +35,9 @@
 
     export default {
         methods: {
-        openPopup() {
+            openPopup() {
+            //   const game = { /* define game object here */ };
+
             this.$swal.fire({
                 title: 'Játék célja',
                 html: `
@@ -50,39 +52,58 @@
                 confirmButtonText: 'Következő',
                 cancelButtonText: 'Bezár',
                 confirmButtonColor: '#00ff99',
-                cancelButtonColor: '#ff0099',
-                pages: true,
-                currentProgress: 0
+                cancelButtonColor: '#ff0099'
             }).then((result) => {
                 if (result.isConfirmed) {
                 this.$swal.fire({
-                    title: 'Popup Title',
+                    title: 'Játékmenet',
                     html: `
                     <div>
-                        <h3>Alap tudnivalók</h3>
-                        <p>${game.game.rules.overview}</p>
+                        <h3>Feladatod:</h3>
+                        <p>${game.game.rules.overview1}</p>
                     </div>
                     <div>
-                        <h3>Vásárlás során</h3>
-                        <p>${game.game.rules.buy_condition}</p>
-                    </div>
-                    <div>
-                        <h3>Eladás lehetősége</h3>
-                        <p>${game.game.rules.sell_condition}</p>
+                        <h3>Döntés:</h3>
+                        <p>${game.game.rules.overview2}</p>
+                        <p>${game.game.rules.overview3}</p>
                     </div>
                     `,
                     showCancelButton: true,
-                    confirmButtonText: 'Rendben',
+                    confirmButtonText: 'Következő',
                     cancelButtonText: 'Bezár',
                     confirmButtonColor: '#00ff99',
-                    cancelButtonColor: '#ff0099',
-                    pages: true,
-                    currentProgress: 1
+                    cancelButtonColor: '#ff0099'
+                }).then((result) => {
+                    if (result.isConfirmed) {
+                    this.$swal.fire({
+                        title: 'A döntésed rajtad múlik',
+                        html: `
+                        <div>
+                            <h3>Vásárlás a piacon</h3>
+                            <p>${game.game.rules.buy_knowhow}</p>
+                        </div>
+                        <div>
+                            <h3>Adakozás a közösségnek</h3>
+                            <p>${game.game.rules.give_knowhow}</p>
+                        </div>
+                        <div>
+                            <h3>Spórolás a jövőért</h3>
+                            <p>${game.game.rules.save_knowhow}</p>
+                        </div>
+                        `,
+                        showCancelButton: true,
+                        confirmButtonText: 'Rendben',
+                        cancelButtonText: 'Bezár',
+                        confirmButtonColor: '#00ff99',
+                        cancelButtonColor: '#ff0099'
+                    });
+                    }
                 });
                 }
             });
+            }
         }
-        },
-    }
+}
+    
 
 </script>
