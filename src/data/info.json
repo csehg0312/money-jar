@@ -4,8 +4,8 @@
 	  "description": "Ismerkedj meg az érmék erejével.",
 	  "rules": {
 		"overview": "A játékosnak el kell döntenie hová helyezi az érméit.",
-		"win_condition": "The player who collects the most artifacts wins.",
-		"lose_condition": "If all players run out of health, the game is lost."
+		"buy_condition": "A játék során több és több érmével leszel gazdagabb amit felhasználhatsz vásárlásra.",
+		"sell_condition": "A már nem szükséges tágyakat el is adhatod"
 	  },
 	  "components": [
 		{

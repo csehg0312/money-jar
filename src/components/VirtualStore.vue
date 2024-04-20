@@ -57,7 +57,8 @@
         item.isPurchased = false
         localStore.commit({
           type: 'updateInHand',
-          amount: item.price
+          amount: item.price,
+          isSale:true
         })
         
   

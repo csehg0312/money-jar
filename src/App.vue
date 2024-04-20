@@ -2,11 +2,13 @@
 import MoneyJars from './components/MoneyJars.vue';
 import VirtualStore from './components/VirtualStore.vue';
 import UsageVisualizer from './components/UsageVisualizer.vue'
+import InfoPanel from './components/InfoPanel.vue'
 
 </script>
 
 <template>
   <div>
+    <InfoPanel />
     <MoneyJars />
     <button @click="toggleShopVisibility" style="margin: 3em 0 3em 0;"> {{ isShopVisible ? 'Piac elhagyása' : 'Piachoz' }}</button>
     <VirtualStore v-if="isShopVisible" />
@@ -27,6 +29,11 @@ import UsageVisualizer from './components/UsageVisualizer.vue'
 .logo.vue:hover {
   filter: drop-shadow(0 0 2em #42b883aa);
 }
+
+button {
+  color:#f9f9f9;
+  background-color: #1a1a1a;
+}
 </style>
 
 <script>
@@ -35,6 +42,7 @@ import UsageVisualizer from './components/UsageVisualizer.vue'
       MoneyJars,
       VirtualStore,
       UsageVisualizer,
+      InfoPanel
     },
 
     data() {

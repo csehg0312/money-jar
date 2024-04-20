@@ -49,7 +49,15 @@ const localStore = createStore({
     
 
     updateInHand(state, payload){
-      state.inHandMoney += payload.amount
+      if (!payload || typeof payload.amount!== 'number') {
+        throw new Error('Invalid payload');
+      }
+      if (payload.isSale){
+        state.inHandMoney += payload.amount
+        state.spendingAmount -= payload.amount
+      }else{
+        state.inHandMoney += payload.amount
+      }
     },
 
     takeTransfer(state, payload){

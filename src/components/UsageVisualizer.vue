@@ -69,8 +69,6 @@
         },
     watch: {
             inHandMoney(newValue) {
-                console.table(this.transactions)
-                // your function to call when inHandMoney changes
                 this.transactions.push({ type: 'Készpénz', oldValue: this.oldInHandMoney, newValue });
                 this.oldInHandMoney = newValue;
             },
@@ -93,9 +91,9 @@
         methods:{
             rowClass(transaction) {
                 const newValue = parseFloat(transaction.newValue);
-                console.log(newValue)
+                // console.log(newValue)
                 const oldValue = parseFloat(transaction.oldValue);
-                console.log(oldValue)
+                // console.log(oldValue)
                 return newValue > oldValue? 'positive-change' : 'negative-change';
             }
         },
