@@ -99,7 +99,7 @@ localStore.watch((state, getters) => state.savingAmount, (newValue) => {
 
 localStore.watch((state, getters) => state.savingAmount, (newValue) => {
   if (newValue >= 750) {
-    localStore.commit('addBadge', { name: 'Megtakarítás szuperhős jelvénye', image: '/badges/saving_suoerhero.svg' })
+    localStore.commit('addBadge', { name: 'Megtakarítás szuperhős jelvénye', image: '/badges/saving_superhero.svg' })
   }
 })
 

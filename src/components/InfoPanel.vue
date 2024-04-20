@@ -76,7 +76,7 @@
                 }).then((result) => {
                     if (result.isConfirmed) {
                     this.$swal.fire({
-                        title: 'A döntésed rajtad múlik',
+                        title: 'A döntés rajtad áll',
                         html: `
                         <div>
                             <h3>Vásárlás a piacon</h3>
