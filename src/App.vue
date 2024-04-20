@@ -3,6 +3,7 @@ import MoneyJars from './components/MoneyJars.vue';
 import VirtualStore from './components/VirtualStore.vue';
 import UsageVisualizer from './components/UsageVisualizer.vue'
 import InfoPanel from './components/InfoPanel.vue'
+import BadgeContainer from './components/BadgeContainer.vue';
 
 </script>
 
@@ -12,6 +13,7 @@ import InfoPanel from './components/InfoPanel.vue'
     <MoneyJars />
     <button @click="toggleShopVisibility" style="margin: 3em 0 3em 0;"> {{ isShopVisible ? 'Piac elhagyása' : 'Piachoz' }}</button>
     <VirtualStore v-if="isShopVisible" />
+    <BadgeContainer :badges="earnedBadges"/>
     <UsageVisualizer/>
   </div>
 </template>
@@ -42,12 +44,16 @@ button {
       MoneyJars,
       VirtualStore,
       UsageVisualizer,
-      InfoPanel
+      InfoPanel, 
+      BadgeContainer
     },
 
     data() {
       return {
         isShopVisible: false,
+        earnedBadges: [
+        { name: 'Beginner Benefactor', image: '/badges/beginner_benefactor.svg' },        
+      ]
       }
     },
 
