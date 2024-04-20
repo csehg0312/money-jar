@@ -13,7 +13,7 @@ import BadgeContainer from './components/BadgeContainer.vue';
     <MoneyJars />
     <button @click="toggleShopVisibility" style="margin: 3em 0 3em 0;"> {{ isShopVisible ? 'Piac elhagyása' : 'Piachoz' }}</button>
     <VirtualStore v-if="isShopVisible" />
-    <BadgeContainer :badges="earnedBadges"/>
+    <BadgeContainer v-if="earnedBadges.length > 0" :badges="earnedBadges"/>
     <UsageVisualizer/>
   </div>
 </template>
@@ -51,10 +51,16 @@ button {
     data() {
       return {
         isShopVisible: false,
-        earnedBadges: [
-        { name: 'Beginner Benefactor', image: '/badges/beginner_benefactor.svg' },        
-      ]
+      //   earnedBadges: [
+      //   { name: 'Beginner Benefactor', image: '/badges/beginner_benefactor.svg' },        
+      // ]
       }
+    },
+
+    computed: {
+      earnedBadges() {
+        // console.log(this.$store.state.earnedBadges)
+        return this.$store.state.earnedBadges || []      }
     },
 
     methods: {

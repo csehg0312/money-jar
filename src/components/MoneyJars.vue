@@ -290,7 +290,7 @@
       },
 
       multiplierCalculate() {
-          this.dailyMultiplier = Math.floor((Math.random()*5)+1);
+          this.dailyMultiplier = Math.floor((Math.random()*100)+1);
       },
       handleNextDay() {
       //   this.dailyMultiplier = 0;

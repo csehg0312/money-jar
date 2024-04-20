@@ -1,4 +1,4 @@
-const serializationKeys = ['savingAmount', 'spendingAmount', 'givingAmount'];
+const serializationKeys = ['inHandMoney', 'savingAmount', 'spendingAmount', 'givingAmount', 'earnedBadges'];
 
 export const localStoragePlugin = store => {
   const existingStore = window.localStorage.getItem('myStore');
