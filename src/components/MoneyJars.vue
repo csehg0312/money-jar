@@ -3,9 +3,9 @@
   <div id="money-jar">
     <h2> {{ game_name }} </h2>
     <br>
-    <div class="container-controls">
+    <!-- <div class="container-controls">
         <input type="button" value="Következő nap ===>" @click="handleNextDay()">
-    </div>
+    </div> -->
     <div class="container-controls">
         <div class="text">Készpénzed jelenleg: {{ inHandMoney }}</div>
     </div>
