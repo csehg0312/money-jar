@@ -20,6 +20,9 @@ dependencies:
   vue-sweetalert2:
     specifier: ^5.0.5
     version: 5.0.5(vue@3.4.21)
+  vue3-cookies:
+    specifier: ^1.0.6
+    version: 1.0.6
   vuex:
     specifier: ^4.1.0
     version: 4.1.0(vue@3.4.21)
@@ -1427,6 +1430,14 @@ packages:
     dependencies:
       sweetalert2: 11.10.7
       vue: 3.4.21
+    dev: false
+
+  /vue3-cookies@1.0.6:
+    resolution: {integrity: sha512-a1UvVD0qIgxyOqjlSOwnLnqAnz8ASltugEv8yX+96i/WGZAN9fEDci7xO4HIWZE1uToUnRq9JnFhvfDCSo45OA==}
+    dependencies:
+      vue: 3.4.21
+    transitivePeerDependencies:
+      - typescript
     dev: false
 
   /vue@3.4.21:

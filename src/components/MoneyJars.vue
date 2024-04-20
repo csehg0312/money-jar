@@ -3,12 +3,10 @@
   <div id="money-jar">
     <h2> {{ game_name }} </h2>
     <br>
-    <div class="container-controls">
+    <!-- <div class="container-controls">
         <input type="button" value="Következő nap ===>" @click="handleNextDay()">
-    </div>
+    </div> -->
     <div class="container-controls">
-    <!-- <p>{{ components_info }}</p> -->
-        <div class="text">Pénz szorzó: {{ dayMultiplier }}x</div>
         <div class="text">Készpénzed jelenleg: {{ inHandMoney }}</div>
     </div>
     <div class="container">
@@ -170,6 +168,7 @@
   import { mapState, mapMutations } from "vuex";
   import localStore from '../js/save';
 
+  import { useCookies } from "vue3-cookies";
   export default {
 
     setup () {
@@ -177,6 +176,8 @@
           type: 'takeTransfer',
           amount: 0
         })
+        const { cookies } = useCookies();
+        return { cookies }
     },
     data() {
         
@@ -189,6 +190,12 @@
         component_spending: imported.game.components[1],
         component_giving: imported.game.components[2],
       };
+    },
+    mounted() {
+      let my_cookie_value = this.cookies.get("incomeFlag");
+      if (!my_cookie_value || this.isCookieExpired("incomeFlag")) {
+        this.writeIn();
+  }
     },
 
     computed: {
@@ -216,6 +223,20 @@
         'updateInHand',
         'takeTransfer',
       ]),
+
+      isCookieExpired(cookieName) {
+        return this.cookies.get(cookieName) === undefined;
+    },
+
+      writeIn() {
+        this.cookies.set("incomeFlag", "updated", "1d"); // Expires in 1 day
+        localStore.commit({
+            type: 'updateInHand',
+            amount: 24,
+            isSale: false
+        });
+        this.notifyUser(`Kaptál 24 pénzt.`, "info");
+      },
 
       handleMoneyTransfer(jar, amount) {
         if (typeof amount === 'number' && amount >= 0) {

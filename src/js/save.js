@@ -1,6 +1,5 @@
 import { createStore } from 'vuex'
 import { localStoragePlugin } from './localStoragePlugin'
-
 const localStore = createStore({
 
   state: {
