@@ -26,7 +26,7 @@ To run Money Jar locally for development purposes, follow these steps:
 
 1. Clone the repository.
 2. Navigate to the project directory.
-3. Install dependencies using `npm install`.
+3. Install dependencies using `pnpm install`.
 4. Start the development server using `npm run dev`.
 5. Access the application in your browser at `http://localhost:5173`.
 
