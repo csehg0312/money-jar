@@ -1,21 +1,35 @@
-# Vue 3 + Vite
+# Money Jar - Children's Progressive Web Application
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Money Jar is an interactive web game designed for children to learn about saving money in a fun and engaging way.
 
-While this project uses Vue.js, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+## Technologies Used
 
-## Deploy Your Own
+- Frontend: Vue 3
+- Backend: Node.js
+- Build Tool: Vite.js
 
-Deploy your own Vite project with Vercel.
+## Features
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/vercel/tree/main/examples/vite&template=vite)
+- Engaging gameplay for children to learn about saving money.
+- Progressive Web Application (PWA) for easy access on various devices.
+- Utilizes localStorage API to store user data locally.
+- Provides a daily reward for game progression, managed via one cookie.
 
-_Live Example: https://vite-vue-template.vercel.app_
+## How to Play
 
-### Deploying From Your Terminal
+1. Visit the Money Jar website on your preferred device.
+2. Track your progress and watch your savings grow!
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+## Development
 
-```shell
-$ vercel
-```
+To run Money Jar locally for development purposes, follow these steps:
+
+1. Clone the repository.
+2. Navigate to the project directory.
+3. Install dependencies using `npm install`.
+4. Start the development server using `npm run dev`.
+5. Access the application in your browser at `http://localhost:3000`.
+
+## Contributions
+
+Contributions to Money Jar are welcome! If you find any bugs or have ideas for improvements, please open an issue or submit a pull request.
