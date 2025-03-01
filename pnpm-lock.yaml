@@ -5,6 +5,7 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  "rollup": ">=3.29.5"
   esbuild:
     specifier: 0.16.17
     version: 0.16.17
